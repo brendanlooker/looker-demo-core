@@ -1,5 +1,5 @@
 view: distribution_centers {
-  sql_table_name: `bb-sandbox-371813.thelook_ecommerce.distribution_centers`
+  sql_table_name: `distribution_centers`
     ;;
   drill_fields: [id]
 

@@ -1,5 +1,5 @@
 view: products {
-  sql_table_name: `bb-sandbox-371813.thelook_ecommerce.products`
+  sql_table_name: `products`
     ;;
   drill_fields: [id]
 

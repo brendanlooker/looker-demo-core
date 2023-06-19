@@ -1,5 +1,5 @@
 view: events {
-  sql_table_name: `bb-sandbox-371813.thelook_ecommerce.events`
+  sql_table_name: `events`
     ;;
   drill_fields: [id]
 

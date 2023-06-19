@@ -1,5 +1,5 @@
 view: users {
-  sql_table_name: `bb-sandbox-371813.thelook_ecommerce.users`
+  sql_table_name: `users`
     ;;
   drill_fields: [id]
 
