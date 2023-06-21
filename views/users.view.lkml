@@ -1,7 +1,12 @@
 view: users {
-  sql_table_name: `users`
-    ;;
-  drill_fields: [id]
+  sql_table_name: {{ bq_tables_parameter._parameter_value | remove: "'" }};;
+
+
+  parameter: bq_tables_parameter {
+    default_value: "ecommerce_retail_cust1.users"
+    suggest_explore: bq_tables
+    suggest_dimension: bq_tables.bq_tables
+  }
 
   dimension: id {
     primary_key: yes

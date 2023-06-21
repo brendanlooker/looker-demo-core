@@ -1,9 +1,11 @@
 view: order_items {
-  sql_table_name: `order_items`
-    ;;
-  drill_fields: [id]
+  # sql_table_name: {{ bq_tables._parameter_value | remove: "'" }} ;;
+  sql_table_name: `order_items`;;
 
-  dimension: id {
+
+
+
+ dimension: id {
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;

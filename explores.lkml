@@ -3,6 +3,14 @@ include: "/views/**/*.view"
 include: "/dashboards/*.dashboard.lookml"
 
 
+explore: bq_tables {}
+
+explore: users {
+  always_filter: {
+    filters: [bq_tables_parameter: "" ]
+  }
+}
+
 explore: order_items {
 
   join: users {
