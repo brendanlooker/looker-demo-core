@@ -31,9 +31,9 @@ explore: order_items {
 }
 
 
-explore: events {}
-explore: users {}
-explore: distribution_centers {}
+# explore: events {}
+# explore: users {}
+# explore: distribution_centers {}
 
 test: historic_revenue_is_accurate {
   explore_source: order_items {
